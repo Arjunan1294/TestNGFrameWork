@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="org.example.ListenersClass"></listener>
     </listeners>
-    <test name="MyTest1" enabled="true">
+    <test name="MyTest11" enabled="true">
         <parameter name="browserName" value="chrome" />
         <groups>
            <!-- <dependencies>
