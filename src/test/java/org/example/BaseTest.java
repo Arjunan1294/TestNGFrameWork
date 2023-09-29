@@ -13,7 +13,7 @@ public class BaseTest {
         driverFactory = new DriverFactory();
         driver =  driverFactory.initDriver(browserName);
         DriverFactory.getDriver().get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
-
+        System.out.println(driver.getCurrentUrl());
     }
 
 
