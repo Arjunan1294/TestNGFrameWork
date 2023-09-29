@@ -12,6 +12,7 @@
             </dependencies>-->
             <define name="dailyBuild">
                 <include name="sanity"/>
+                <include name="smoke"/>
             </define>
             <run>
                 <include name="smoke"/>
