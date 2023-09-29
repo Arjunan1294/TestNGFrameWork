@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-28T15:52:01 IST" name="MyTestSuite" finished-at="2023-09-28T15:52:32 IST" duration-ms="31224">
+    <groups>
+    </groups>
+    <test started-at="2023-09-28T15:52:01 IST" name="MyTest1" finished-at="2023-09-28T15:52:15 IST" duration-ms="14288">
+      <class name="org.example.LoginPage">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.example.LoginPage@19e4653c]" started-at="2023-09-28T15:52:01 IST" name="setup" finished-at="2023-09-28T15:52:10 IST" duration-ms="8492" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test1()[pri:0, instance:org.example.LoginPage@19e4653c]" started-at="2023-09-28T15:52:10 IST" name="test1" finished-at="2023-09-28T15:52:15 IST" duration-ms="5358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.LoginPage@19e4653c]" started-at="2023-09-28T15:52:15 IST" name="tearDown" finished-at="2023-09-28T15:52:15 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.LoginPage -->
+    </test> <!-- MyTest1 -->
+    <test started-at="2023-09-28T15:52:01 IST" name="MyTest2" finished-at="2023-09-28T15:52:32 IST" duration-ms="31224">
+      <class name="org.example.LoginPage">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.example.LoginPage@5a59ca5e]" started-at="2023-09-28T15:52:01 IST" name="setup" finished-at="2023-09-28T15:52:25 IST" duration-ms="24111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test1()[pri:0, instance:org.example.LoginPage@5a59ca5e]" started-at="2023-09-28T15:52:25 IST" name="test1" finished-at="2023-09-28T15:52:31 IST" duration-ms="5350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.LoginPage@5a59ca5e]" started-at="2023-09-28T15:52:31 IST" name="tearDown" finished-at="2023-09-28T15:52:32 IST" duration-ms="1668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.LoginPage -->
+    </test> <!-- MyTest2 -->
+  </suite> <!-- MyTestSuite -->
+</testng-results>

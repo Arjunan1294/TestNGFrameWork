@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="org.example.ListenersClass"></listener>
+    </listeners>
+    <test name="MyTest1" enabled="true">
+        <parameter name="browserName" value="chrome" />
+        <groups>
+           <!-- <dependencies>
+                <group name="sanity" depends-on="smoke"></group>
+            </dependencies>-->
+            <define name="dailyBuild">
+                <include name="sanity"/>
+                <include name="smoke"/>
+            </define>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.LoginPage" >
+                <methods>
+                  <!--  <include name="test1"/>
+                    <include name="test2"/>-->
+                    <include name="test3"/>
+                    <include name="test4"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <test name="MyTest2" enabled="false">
+        <parameter name="browserName" value="firefox" />
+        <classes>
+            <class name="org.example.LoginPage" />
+        </classes>
+    </test>
+</suite>
