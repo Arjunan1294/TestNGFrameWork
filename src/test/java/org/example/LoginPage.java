@@ -5,12 +5,11 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 public class LoginPage extends BaseTest{
+
+
     Google google;
 
 
@@ -26,11 +25,12 @@ public class LoginPage extends BaseTest{
     public void test2() throws InterruptedException {
         google = new Google(DriverFactory.getDriver());
         google.enterEmail("summa");
+
         Thread.sleep(5000);
     }
 
    // @Test(dataProvider = "dataprov1", groups = {"smoke"},expectedExceptions = {NoSuchElementException.class, ExcelReader.class})
-    @Test(dataProvider = "dataprov1", groups = {"smoke"})
+    @Test(dataProvider = "dataprov1", groups = {"smoke"},enabled = true,retryAnalyzer = RetryAnalyzerClass.class)
     public void test3(Object s1,Object s2,Object s3,Object s4) throws InterruptedException {
         System.out.println("summa test1");
         System.out.println(s1);
@@ -44,6 +44,7 @@ public class LoginPage extends BaseTest{
         System.out.println("summa test1");
         for(Object o:ss){
             System.out.println(o);
+
         }
     }
 
@@ -73,7 +74,7 @@ public class LoginPage extends BaseTest{
         return obj1;
     }
 
-    @DataProvider(name="summa",parallel = true)
+    @DataProvider(name="summa")
     public Iterator<Object[]> data3(){
         List<Object[]> sss = new ArrayList<>();
         sss.add(new Object[]{"ada","enna"});
